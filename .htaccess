@@ -1,0 +1,13 @@
+# 1. Απενεργοποίηση εμφάνισης λίστας αρχείων
+Options -Indexes
+DirectoryIndex index.php
+
+# 2. Ενεργοποίηση της μηχανής Rewrite
+RewriteEngine On
+
+# 3. Επίτρεψε την πρόσβαση στον κεντρικό φάκελο (ώστε να τρέξει το index.php)
+RewriteRule ^$ - [L]
+
+# 4. Μπλόκαρε τα πάντα (Forbidden) ΕΚΤΟΣ από τις επιτρεπόμενες καταλήξεις
+RewriteCond %{REQUEST_URI} !\.(php|css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf)$ [NC]
+RewriteRule ^(.*)$ - [F,L]
