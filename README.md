@@ -25,5 +25,5 @@
 
 1. **Κατέβασμα της εφαρμογής (Clone):**
    ```bash
-   git clone [https://github.com/hatziioa78/e-Aitisi.git](https://github.com/hatziioa78/e-Aitisi.git)
+   git clone [https://github.com/hatziioa78/e-aitisi.git](https://github.com/hatziioa78/e-aitisi.git)
    cd e-Aitisi
