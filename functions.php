@@ -3704,7 +3704,7 @@ function application2pdf_format($db_application_id)
     <div style="margin:auto auto;text-align:center;width:100%;">
         <br><br>
         <i><small>
-        Η αίτηση υποβλήθηκε Ψηφιακά από το https://aitisi-dide.flo.sch.gr/<br>'.date('d/m/Y - H:i:s',$appdatas['time_last_modified']).'
+        Η αίτηση υποβλήθηκε Ψηφιακά από το '.$srv_conf['CAS Configuration']['client_service_name'].'<br>'.date('d/m/Y - H:i:s',$appdatas['time_last_modified']).'
         </small>
         </i>    </div>';
 
